@@ -1,12 +1,21 @@
-import styles from '../../../styles/Home.module.css'
-import BG from '../../components/image/nathan.png'
+import styles from "../../../styles/Home.module.css";
+import BG from "../../components/image/nathan.png";
 import Image from "next/image";
 
-const Landing =()=>{
-    return(
-        <div className={styles}>
-            <Image src={BG} alt="bg" />
+const Landing = () => {
+  return (
+    <div className={styles}>
+      <div className="flex flex-col  hover:bg-transparent hover:bg-black">
+        <Image className="" src={BG} alt="" />
+        <div className="form-control">
+          <input
+            type="text"
+            placeholder="Search"
+            className="input input-bordered justify-end"
+          />
         </div>
-    )
-}
-export default Landing
+      </div>
+    </div>
+  );
+};
+export default Landing;
