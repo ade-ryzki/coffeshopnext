@@ -11,10 +11,6 @@ export default function Home() {
     <div className={styles.container}>
       <Navbar/>
       <Landing/>
-
-      {/* <Image className='w-full' src={BG} alt="bg" /> */}
-      <div className='text-blue-600 font-extrabold'>ini Home</div>
-
       <Footer/>
     </div>
   )
