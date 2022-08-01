@@ -6,10 +6,14 @@ import PR from "../../components/image/image 22.png";
 import CK from "../../components/image/Vector.svg";
 import map from "../../components/image/map.svg";
 import NF from "../../components/image/netflix.png";
-import RD from "../../components/image/reddit.png";
-import AZ from "../../components/image/amazon.png";
 import DC from "../../components/image/discord.png";
 import SP from "../../components/image/spotify.png";
+import ICON1 from "../../components/image/user.svg";
+import ICON2 from "../../components/image/location.svg";
+import ICON3 from "../../components/image/server.svg";
+import AVATAR from "../../components/image/Ellipse 175.png";
+import star from "../../components/image/star.svg";
+
 
 import Image from "next/image";
 
@@ -22,7 +26,7 @@ const Landing = () => {
           Start Your Day with <br /> Coffee and Good Meals
           <p className="mt-5 mb-7 text-xl">
             We provide high quality beans, good taste, and healthy <br /> meals
-            made by love just for you. Start your day with us <br /> for a
+            made by love just for you.Start your day with us <br /> for a
             bigger smile!.
           </p>
           <div>
@@ -32,6 +36,37 @@ const Landing = () => {
           </div>
         </div>
       </div>
+      {/* card mt- */}
+      <div className="bg-white">
+        <div className=" flex flex-wrap justify-center mt-[-50px] ">
+          <div className="card w-2/3 bg-white shadow-xl ">
+            <div className="flex flex-wrap justify-around my-5 ">
+              <div className="flex flex-wrap">
+                <Image src={ICON1} alt="" />
+                <div className='pl-2 text-center text-black'>
+                  <p className="font-bold">90+</p>
+                  <p>Staff</p>
+                </div>
+              </div>
+              <div className="flex flex-wrap ">
+                <Image src={ICON2} alt="" />
+                <div className='pl-2 text-center text-black '>
+                  <p className="font-bold">30+</p>
+                  <p>Stores</p>
+                </div>
+              </div>
+              <div className="flex flex-wrap">
+                <Image src={ICON3} alt="" />
+                <div className='pl-2 text-center text-black'>
+                  <p className="font-bold">999+</p>
+                  <p>Customers</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      {/* section-2 */}
       <div className="grid grid-col-2 md:grid-flow-col font-['Rubik']">
         <div className="bg-white text-center">
           <div className="my-10 text-center">
@@ -79,11 +114,11 @@ const Landing = () => {
         </div>
       </div>
       {/* section card */}
-      <div className="bg-[#BCBABA] text-[#0B132A]">
+      <div className="bg-[#ececec] text-[#0B132A]">
         {/* tanya  */}
         <div className="text-center ">
-          <h1 className="text-3xl text-[#BCBABA]">Here is People’s Favorite</h1>
-          <p className="text-xl text-[#BCBABA]">
+          <h1 className="text-3xl text-[#ececec]">Here is People’s Favorite</h1>
+          <p className="text-xl text-[#ececec]">
             Let’s choose and have a bit taste of poeple’s favorite. It might be
             yours too!
           </p>
@@ -209,40 +244,214 @@ const Landing = () => {
         {/* map */}
         <div>
           <div className="mt-10 text-center text-black font-bold text-3xl ">
-            <h3>Visit Our Store in the <br/> Spot on the Map Below </h3>
+            <h3>
+              Visit Our Store in the <br /> Spot on the Map Below{" "}
+            </h3>
           </div>
           <div className="mt-10 text-center text-[#4F5665]  text-lg ">
-            <p>See our store in every city on the spot and spen your good day there. See <br/> you soon! </p>
+            <p>
+              See our store in every city on the spot and spen your good day
+              there.See <br /> you soon!{" "}
+            </p>
           </div>
           <div className=" text-center mt-10">
-            <Image src={map} alt='map'/>
+            <Image src={map} alt="map" />
           </div>
         </div>
       </div>
       {/* our partner */}
-      <div className="bg-white font-['Rubik']">
+      <div className="bg-[#ececec] font-['Rubik']">
         <div className="text-center text-black font-bold text-4xl">
           <h2>Our Partner</h2>
         </div>
         <div className="flex flex-wrap justify-center mt-10 ">
-          <div className="mx-2">
-          <Image src={NF} alt="" />
+          <div className="mx-2 item-center">
+            <Image src={NF} alt="" />
           </div>
-          <div className="mx-2">
-          <Image src={NF} alt="" />
+          <div className="mx-2 item-center">
+            <Image src={DC} alt="" />
           </div>
-          <div className="mx-2">
-          <Image src={NF} alt="" />
-          </div>
-          <div className="mx-2">
-          <Image src={NF} alt="" />
-          </div>
-          <div className="mx-2">
-          <Image src={NF} alt="" />
+          <div className="mx-2 item-center">
+            <Image src={SP} alt="" />
           </div>
         </div>
       </div>
+      {/* card slide */}
+      <div className="bg-[#ececec] text-[#0B132A] "> 
+      <div className="text-center text-[#ececec] font-bold text-4xl">
+          <h2>Loved by Thousands of <br /> Happy Customer</h2>
+        </div>
+      <div className="text-center text-black font-bold text-4xl">
+          <h2>Loved by Thousands of <br /> Happy Customer</h2>
+        </div>
+        <div className="text-lg text-center mt-4">
+          <p clasName=''>These are the stories of our customers who have visited us with great <br /> pleasure</p>
+        </div>
+        <div className="container px-4 flex-grow w-full py-4 sm:py-16 mx-auto">
+          <div className="mx-auto w-full md:w-4/5 px-4">
+            <div className="container my-8">
+              <div id="scrollContainer" className="flex flex-no-wrap overflow-x-scroll scrolling-touch items-start mb-8">
+                <div className="flex-none w-2/3 md:w-1/3 mr-8 md:pb-4 border rounded-lg">
+                  <div className="card w-96 bg-white text-black">
+                    <div className="card-body">
+                      <div className='flex justify-between'>
+                        <div className='flex'>
+                          <Image src={AVATAR} alt='' />
+                          <div className='pl-2'>
+                            <h1 className="font-bold">Viezh Robert</h1>
+                            <h4>Warsaw, Poland</h4>
+                          </div>
+                        </div>
+                        <div className=''>
+                          <h4>4.5</h4>
+                          <Image src={star} alt='' />
+                        </div>
+                      </div>
+                      <p>Wow...I am very happy to spend my whole <br /> day here.the Wi-fi is good, and <br /> the coffee and meals tho. I like it here!! Very recommended!</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="flex-none w-2/3 md:w-1/3 mr-8 md:pb-4 border rounded-lg">
+                  <div className="card w-96 bg-white text-black">
+                    <div className="card-body">
+                      <div className='flex justify-between'>
+                        <div className='flex'>
+                          <Image src={AVATAR} alt='' />
+                          <div className='pl-2'>
+                            <h1 className="font-bold">Viezh Robert</h1>
+                            <h4>Warsaw, Poland</h4>
+                          </div>
+                        </div>
+                        <div className=''>
+                          <h4>4.5</h4>
+                          <Image src={star} alt='' />
+                        </div>
+                      </div>
+                      <p>Wow...I am very happy to spend my whole <br /> day here.the Wi-fi is good, and <br /> the coffee and meals tho. I like it here!! Very recommended!</p>
+                    </div>
+                  </div>
+
+                </div>
+                <div className="flex-none w-2/3 md:w-1/3 mr-8 md:pb-4 border rounded-lg">
+                  <div className="card w-96 bg-white text-black">
+                    <div className="card-body">
+                      <div className='flex justify-between'>
+                        <div className='flex'>
+                          <Image src={AVATAR} alt='' />
+                          <div className='pl-2'>
+                            <h1 className="font-bold">Viezh Robert</h1>
+                            <h4>Warsaw, Poland</h4>
+                          </div>
+                        </div>
+                        <div className=''>
+                          <h4>4.5</h4>
+                          <Image src={star} alt='' />
+                        </div>
+                      </div>
+                      <p>Wow...I am very happy to spend my whole <br /> day here.the Wi-fi is good, and <br /> the coffee and meals tho. I like it here!! Very recommended!</p>
+                    </div>
+                  </div>
+
+                </div>
+                <div className="flex-none w-2/3 md:w-1/3 mr-8 md:pb-4 border rounded-lg">
+                  <div className="card w-96 bg-white text-black">
+                    <div className="card-body">
+                      <div className='flex justify-between'>
+                        <div className='flex'>
+                          <Image src={AVATAR} alt='' />
+                          <div className='pl-2'>
+                            <h1 className="font-bold">Viezh Robert</h1>
+                            <h4>Warsaw, Poland</h4>
+                          </div>
+                        </div>
+                        <div className=''>
+                          <h4>4.5</h4>
+                          <Image src={star} alt='' />
+                        </div>
+                      </div>
+                      <p>Wow...I am very happy to spend my whole <br /> day here.the Wi-fi is good, and <br /> the coffee and meals tho. I like it here!! Very recommended!</p>
+                    </div>
+                  </div>
+
+                </div>
+                <div className="flex-none w-2/3 md:w-1/3 mr-8 md:pb-4 border rounded-lg">
+                  <div className="card w-96 bg-white text-black">
+                    <div className="card-body">
+                      <div className='flex justify-between'>
+                        <div className='flex'>
+                          <Image src={AVATAR} alt='' />
+                          <div className='pl-2'>
+                            <h1 className="font-bold">Viezh Robert</h1>
+                            <h4>Warsaw, Poland</h4>
+                          </div>
+                        </div>
+                        <div className=''>
+                          <h4>4.5</h4>
+                          <Image src={star} alt='' />
+                        </div>
+                      </div>
+                      <p>Wow...I am very happy to spend my whole <br /> day here.the Wi-fi is good, and <br /> the coffee and meals tho. I like it here!! Very recommended!</p>
+                    </div>
+                  </div>
+
+                </div>
+                <div className="flex-none w-2/3 md:w-1/3 mr-8 md:pb-4 border rounded-lg">
+                  <div className="card w-96 bg-white text-black">
+                    <div className="card-body">
+                      <div className='flex justify-between'>
+                        <div className='flex'>
+                          <Image src={AVATAR} alt='' />
+                          <div className='pl-2'>
+                            <h1 className="font-bold">Viezh Robert</h1>
+                            <h4>Warsaw, Poland</h4>
+                          </div>
+                        </div>
+                        <div className=''>
+                          <h4>4.5</h4>
+                          <Image src={star} alt='' />
+                        </div>
+                      </div>
+                      <p>Wow...I am very happy to spend my whole <br /> day here.the Wi-fi is good, and <br /> the coffee and meals tho. I like it here!! Very recommended!</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
       </div>
+      <div className="bg-[#ececec]">
+        <div className=" flex flex-wrap justify-center mb-[-30px] ">
+          <div className="card w-2/3 bg-white shadow-xl ">
+            <div className="flex flex-wrap justify-around my-5 ">
+              <div className="flex flex-wrap">
+                <Image src={ICON1} alt="" />
+                <div className='pl-2 text-center text-black'>
+                  <p className="font-bold">90+</p>
+                  <p>Staff</p>
+                </div>
+              </div>
+              <div className="flex flex-wrap ">
+                <Image src={ICON2} alt="" />
+                <div className='pl-2 text-center text-black '>
+                  <p className="font-bold">30+</p>
+                  <p>Stores</p>
+                </div>
+              </div>
+              <div className="flex flex-wrap">
+                <Image src={ICON3} alt="" />
+                <div className='pl-2 text-center text-black'>
+                  <p className="font-bold">999+</p>
+                  <p>Customers</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   );
 };
 export default Landing;

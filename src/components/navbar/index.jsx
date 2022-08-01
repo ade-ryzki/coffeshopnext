@@ -1,12 +1,13 @@
 import styles from "../../../styles/Home.module.css";
 import logo from "../../components/image/coffee 1.svg";
 import Image from "next/image";
+import Link  from 'next/link'
 
 const Navbar = () => {
   return (
     <div className={styles}>
       <div className="navbar bg-white rounded-t-lg text-black font-[Rubix]">
-        <div className="navbar-start">
+        <div className="navbar-start ">
           <div className="dropdown">
             <label tabIndex={0} className="btn btn-ghost lg:hidden">
               <svg
@@ -63,9 +64,11 @@ const Navbar = () => {
         </div>
         <div className="navbar-end">
           <a className="mr-4">Login</a>
+          <Link href='/login'>
           <a className="btn rounded-full hover:bg-[#b59047] hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 bg-[#FFBA33] active:shadow-lg transition duration-150 ease-in-out  text-black">
             Sign Up
           </a>
+          </Link>
         </div>
       </div>
     </div>
