@@ -4,6 +4,8 @@ import Image from "next/image";
 import Link  from 'next/link'
 
 const Navbar = () => {
+  // const { data, error, loading, isLogin } = useSelector((state) => state.auth);
+
   return (
     <div className={styles}>
       <div className="navbar bg-white rounded-t-lg text-black font-[Rubix]">
@@ -71,6 +73,11 @@ const Navbar = () => {
           </Link>
         </div>
       </div>
+      {/* {isLogin ? (
+				) : (
+					
+				)} */}
+
     </div>
   );
 };
