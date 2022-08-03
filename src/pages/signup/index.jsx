@@ -27,9 +27,6 @@ const Signup = () => {
               </a>
             </div>
           </div>
-          <div className="text-center font-extrabold text-2xl text-[#6A4029]">
-            <h1>Sign Up </h1>
-          </div>
           <div className="flex justify-center mt-10">
             <form className="object-center">
               <div>
