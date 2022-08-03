@@ -64,7 +64,7 @@ const Navbar = () => {
         </div>
         <div className="navbar-end">
           <a className="mr-4">Login</a>
-          <Link href='/login'>
+          <Link href='/signup'>
           <a className="btn rounded-full hover:bg-[#b59047] hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 bg-[#FFBA33] active:shadow-lg transition duration-150 ease-in-out  text-black">
             Sign Up
           </a>

@@ -47,6 +47,7 @@ const Landing = () => {
                   <p className="font-bold">90+</p>
                   <p>Staff</p>
                 </div>
+                <div className="divider divider-horizontal"/>
               </div>
               <div className="flex flex-wrap ">
                 <Image src={ICON2} alt="" />
@@ -54,6 +55,7 @@ const Landing = () => {
                   <p className="font-bold">30+</p>
                   <p>Stores</p>
                 </div>
+                <div className="divider divider-horizontal text-center first-letter:"/>
               </div>
               <div className="flex flex-wrap">
                 <Image src={ICON3} alt="" />
