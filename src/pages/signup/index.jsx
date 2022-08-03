@@ -3,8 +3,26 @@ import logo from "../../components/image/coffee 1.svg";
 import google from "../../components/image/google.svg";
 import Image from "next/image";
 import Link from "next/link";
+import { useState } from "react";
+import { useRouter }from "next/router";
 
 const Signup = () => {
+  const router = useRouter()
+  const [email, setemail] = useState('')
+  const [password, setpassword] = useState('')
+  const [phone_number, setphone_number] = useState('')
+  const handleSubmit =()=>{
+    fetch("http://localhost:3005/api/v1/auth/register", {
+      method:"POST", 
+      body:{
+        email: email,
+        password : password,
+        phone_number : phone_number
+      }
+    }).then (()=>{router.push ('/login') ;console.log('test data register')})
+    .catch((err)=>{console.log(err)})
+  }
+
   return (
     <div>
       <div className="grid grid-col-3 md:grid-flow-col text-black font-[Rubik]">
@@ -36,8 +54,11 @@ const Signup = () => {
                 <input
                   type="text"
                   className="form-control block w-[500px] px-3 py-2 text-sm font-normal text-[#388087]-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded-[10px] transition ease-in-out mb-5 focus:text-gray-700 focus:bg-white focus:border-[#388087]-600 focus:outline-none"
-                  id="exampleFormControlInput2"
+                  id="mail"
                   placeholder="Enter your email address"
+                  onChange={(e) => {
+                    setemail(e.target.value);
+                  }}
                 />
               </div>
               <div>
@@ -47,8 +68,11 @@ const Signup = () => {
                 <input
                   type="password"
                   className="form-control block w-[500px] px-3 py-2 text-sm font-normal text-[#388087]-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded-[10px] transition ease-in-out mb-5 focus:text-gray-700 focus:bg-white focus:border-[#388087]-600 focus:outline-none"
-                  id="exampleFormControlInput2"
+                  id="pass"
                   placeholder="Enter your password"
+                  onChange={(e) => {
+                    setpassword(e.target.value);
+                  }}
                 />
               </div>
               <div>
@@ -58,14 +82,17 @@ const Signup = () => {
                 <input
                   type="text"
                   className="form-control block w-[500px] px-3 py-2 text-sm font-normal text-[#388087]-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded-[10px] transition ease-in-out mb-5 focus:text-gray-700 focus:bg-white focus:border-[#388087]-600 focus:outline-none"
-                  id="exampleFormControlInput2"
+                  id="number"
                   placeholder="Enter your phone number"
+                  onChange={(e) => {
+                    setphone_number(e.target.value);
+                  }}
                 />
               </div>
             </form>
           </div>
           <div className="flex justify-center mt-10">
-            <button className="btn w-[500px] hover:bg-[#b59047] hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 bg-[#FFBA33] active:shadow-lg transition duration-150 ease-in-out  text-black">
+            <button className="btn w-[500px] hover:bg-[#b59047] hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 bg-[#FFBA33] active:shadow-lg transition duration-150 ease-in-out  text-black" onClick={()=>{handleSubmit()}}>
               Sign Up
             </button>
           </div>

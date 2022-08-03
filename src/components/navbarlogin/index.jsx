@@ -10,24 +10,8 @@ const Navbarlogin = () => {
     <div className={styles}>
       <div className="navbar bg-white text-black">
         <div className="flex-1">
-        <Image src={logo} alt="logo" />
+          <Image src={logo} alt="logo" />
           <a className="btn btn-ghost normal-case text-xl">Coffee Shop</a>
-        </div>
-        <div className="  navbar-center ">
-          <ul className="menu menu-horizontal p-0">
-            <li>
-              <a>Home</a>
-            </li>
-            <li>
-              <a>Product</a>
-            </li>
-            <li>
-              <a>Your Cart</a>
-            </li>
-            <li>
-              <a>History</a>
-            </li>
-          </ul>
         </div>
         <div className="flex-none gap-2">
           <div className="form-control">
@@ -37,7 +21,7 @@ const Navbarlogin = () => {
               className="input input-bordered bg-white"
             />
           </div>
-          
+
           <div className="dropdown dropdown-end">
             <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
               <div className="w-10 rounded-full">
@@ -49,9 +33,21 @@ const Navbarlogin = () => {
               className="mt-3 p-2 shadow menu menu-compact dropdown-content bg-white rounded-box w-52"
             >
               <li>
-                <a className="justify-between">
-                  Profile
-                </a>
+                <a className="justify-between">Profile</a>
+              </li>
+              <Link href='/'>
+              <li>
+                <a>Home</a>
+              </li>
+              </Link>
+              <li>
+                <a>Product</a>
+              </li>
+              <li>
+                <a>Your Cart</a>
+              </li>
+              <li>
+                <a>History</a>
               </li>
               <li>
                 <a>Settings</a>

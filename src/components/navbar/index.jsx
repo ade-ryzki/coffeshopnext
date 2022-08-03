@@ -50,12 +50,16 @@ const Navbar = () => {
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal p-0">
+          
             <li>
               <a>Home</a>
             </li>
+            <Link href='/product'>
             <li>
               <a>Product</a>
-            </li>
+            </li>  
+          </Link>
+            
             <li>
               <a>Your Cart</a>
             </li>
@@ -65,7 +69,7 @@ const Navbar = () => {
           </ul>
         </div>
         <div className="navbar-end">
-          <a className="mr-4">Login</a>
+          <Link href='/login'><a className="mr-4">Login</a></Link>
           <Link href='/signup'>
           <a className="btn rounded-full hover:bg-[#b59047] hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 bg-[#FFBA33] active:shadow-lg transition duration-150 ease-in-out  text-black">
             Sign Up

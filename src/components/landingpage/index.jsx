@@ -4,7 +4,7 @@ import teamwork from "../../components/image/teamwork.png";
 import checklist from "../../components/image/checklist.png";
 import PR from "../../components/image/image 22.png";
 import CK from "../../components/image/Vector.svg";
-import map from "../../components/image/map.svg";
+import MAP from "../../components/image/map.svg";
 import NF from "../../components/image/netflix.png";
 import DC from "../../components/image/discord.png";
 import SP from "../../components/image/spotify.png";
@@ -257,7 +257,7 @@ const Landing = () => {
             </p>
           </div>
           <div className=" text-center mt-10">
-            <Image src={map} alt="map" />
+            <Image src={MAP} alt="map" />
           </div>
         </div>
       </div>
