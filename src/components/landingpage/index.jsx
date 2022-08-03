@@ -12,7 +12,11 @@ import ICON1 from "../../components/image/user.svg";
 import ICON2 from "../../components/image/location.svg";
 import ICON3 from "../../components/image/server.svg";
 import AVATAR from "../../components/image/Ellipse 175.png";
+import AVATAR1 from "../../components/image/Ellipse 175 (1).png";
+import AVATAR2 from "../../components/image/Ellipse 175 (2).png";
 import star from "../../components/image/star.svg";
+import P3 from "../../components/image/SUMMER.png";
+import P4 from "../../components/image/CREAMY.png"
 
 
 import Image from "next/image";
@@ -172,10 +176,10 @@ const Landing = () => {
           </div>
           <div className="card w-96 bg-white shadow-xl my-10 mx-5">
             <figure className="px-10 pt-10">
-              <Image src={PR} alt="PR" className="rounded-full" />
+              <Image src={P4} alt="P4" className="rounded-full" />
             </figure>
             <div className="card-body items-center ">
-              <h2 className="card-title text-center my-5">Hazelnut Latte</h2>
+              <h2 className="card-title text-center my-5">Pinky Promise</h2>
               <div>
                 <div className="flex my-5">
                   <Image src={CK} alt="CK" />
@@ -195,7 +199,7 @@ const Landing = () => {
                 </div>
                 <div>
                   <h2 className="text-2xl font-bold text-center my-5">
-                    IDR 25.000
+                    IDR 30.000
                   </h2>
                 </div>
               </div>
@@ -208,10 +212,10 @@ const Landing = () => {
           </div>
           <div className="card w-96 bg-white shadow-xl my-10 mx-5">
             <figure className="px-10 pt-10">
-              <Image src={PR} alt="PR" className="rounded-full" />
+              <Image src={P3} alt="P3" className="rounded-full" />
             </figure>
             <div className="card-body items-center ">
-              <h2 className="card-title text-center my-5">Hazelnut Latte</h2>
+              <h2 className="card-title text-center my-5">Rice</h2>
               <div>
                 <div className="flex my-5">
                   <Image src={CK} alt="CK" />
@@ -267,8 +271,11 @@ const Landing = () => {
           <h2>Our Partner</h2>
         </div>
         <div className="flex flex-wrap justify-center mt-10 ">
+        <div className="mx-2 item-center">
+            <Image src={DC} alt="" />
+          </div>
           <div className="mx-2 item-center">
-            <Image src={NF} alt="" />
+            <Image src={SP} alt="" />
           </div>
           <div className="mx-2 item-center">
             <Image src={DC} alt="" />
@@ -293,26 +300,6 @@ const Landing = () => {
           <div className="mx-auto w-full md:w-4/5 px-4">
             <div className="container my-8">
               <div id="scrollContainer" className="flex flex-no-wrap overflow-x-scroll scrolling-touch items-start mb-8">
-                <div className="flex-none w-2/3 md:w-1/3 mr-8 md:pb-4 border rounded-lg">
-                  <div className="card w-96 bg-white text-black">
-                    <div className="card-body">
-                      <div className='flex justify-between'>
-                        <div className='flex'>
-                          <Image src={AVATAR} alt='' />
-                          <div className='pl-2'>
-                            <h1 className="font-bold">Viezh Robert</h1>
-                            <h4>Warsaw, Poland</h4>
-                          </div>
-                        </div>
-                        <div className=''>
-                          <h4>4.5</h4>
-                          <Image src={star} alt='' />
-                        </div>
-                      </div>
-                      <p>Wow...I am very happy to spend my whole <br /> day here.the Wi-fi is good, and <br /> the coffee and meals tho. I like it here!! Very recommended!</p>
-                    </div>
-                  </div>
-                </div>
 
                 <div className="flex-none w-2/3 md:w-1/3 mr-8 md:pb-4 border rounded-lg">
                   <div className="card w-96 bg-white text-black">
@@ -333,17 +320,16 @@ const Landing = () => {
                       <p>Wow...I am very happy to spend my whole <br /> day here.the Wi-fi is good, and <br /> the coffee and meals tho. I like it here!! Very recommended!</p>
                     </div>
                   </div>
-
                 </div>
                 <div className="flex-none w-2/3 md:w-1/3 mr-8 md:pb-4 border rounded-lg">
                   <div className="card w-96 bg-white text-black">
                     <div className="card-body">
                       <div className='flex justify-between'>
                         <div className='flex'>
-                          <Image src={AVATAR} alt='' />
+                          <Image src={AVATAR1} alt='' />
                           <div className='pl-2'>
-                            <h1 className="font-bold">Viezh Robert</h1>
-                            <h4>Warsaw, Poland</h4>
+                            <h1 className="font-bold">Yessica Christy</h1>
+                            <h4>Shanxi, China</h4>
                           </div>
                         </div>
                         <div className=''>
@@ -351,20 +337,19 @@ const Landing = () => {
                           <Image src={star} alt='' />
                         </div>
                       </div>
-                      <p>Wow...I am very happy to spend my whole <br /> day here.the Wi-fi is good, and <br /> the coffee and meals tho. I like it here!! Very recommended!</p>
+                      <p>I like it because I like to travel far and still can <br /> make my day better just by drinking their <br /> Hazelnut Latte</p>
                     </div>
                   </div>
-
                 </div>
                 <div className="flex-none w-2/3 md:w-1/3 mr-8 md:pb-4 border rounded-lg">
                   <div className="card w-96 bg-white text-black">
                     <div className="card-body">
                       <div className='flex justify-between'>
                         <div className='flex'>
-                          <Image src={AVATAR} alt='' />
+                          <Image src={AVATAR2} alt='' />
                           <div className='pl-2'>
-                            <h1 className="font-bold">Viezh Robert</h1>
-                            <h4>Warsaw, Poland</h4>
+                            <h1 className="font-bold">Kim Young Jou </h1>
+                            <h4>Seoul, South Korea</h4>
                           </div>
                         </div>
                         <div className=''>
@@ -372,7 +357,7 @@ const Landing = () => {
                           <Image src={star} alt='' />
                         </div>
                       </div>
-                      <p>Wow...I am very happy to spend my whole <br /> day here.the Wi-fi is good, and <br /> the coffee and meals tho. I like it here!! Very recommended!</p>
+                      <p> “This is very unusual for my taste, I haven’t <br /> liked coffee before but their coffee is the <br /> best! and yup, you have to order the chicken wings, the best in town!</p>
                     </div>
                   </div>
 
@@ -396,17 +381,16 @@ const Landing = () => {
                       <p>Wow...I am very happy to spend my whole <br /> day here.the Wi-fi is good, and <br /> the coffee and meals tho. I like it here!! Very recommended!</p>
                     </div>
                   </div>
-
                 </div>
                 <div className="flex-none w-2/3 md:w-1/3 mr-8 md:pb-4 border rounded-lg">
                   <div className="card w-96 bg-white text-black">
                     <div className="card-body">
                       <div className='flex justify-between'>
                         <div className='flex'>
-                          <Image src={AVATAR} alt='' />
+                          <Image src={AVATAR1} alt='' />
                           <div className='pl-2'>
-                            <h1 className="font-bold">Viezh Robert</h1>
-                            <h4>Warsaw, Poland</h4>
+                            <h1 className="font-bold">Yessica Christy</h1>
+                            <h4>Shanxi, China</h4>
                           </div>
                         </div>
                         <div className=''>
@@ -414,9 +398,30 @@ const Landing = () => {
                           <Image src={star} alt='' />
                         </div>
                       </div>
-                      <p>Wow...I am very happy to spend my whole <br /> day here.the Wi-fi is good, and <br /> the coffee and meals tho. I like it here!! Very recommended!</p>
+                      <p>I like it because I like to travel far and still can <br /> make my day better just by drinking their <br /> Hazelnut Latte</p>
                     </div>
                   </div>
+                </div>
+                <div className="flex-none w-2/3 md:w-1/3 mr-8 md:pb-4 border rounded-lg">
+                  <div className="card w-96 bg-white text-black">
+                    <div className="card-body">
+                      <div className='flex justify-between'>
+                        <div className='flex'>
+                          <Image src={AVATAR2} alt='' />
+                          <div className='pl-2'>
+                            <h1 className="font-bold">Kim Young Jou </h1>
+                            <h4>Seoul, South Korea</h4>
+                          </div>
+                        </div>
+                        <div className=''>
+                          <h4>4.5</h4>
+                          <Image src={star} alt='' />
+                        </div>
+                      </div>
+                      <p> “This is very unusual for my taste, I haven’t <br /> liked coffee before but their coffee is the <br /> best! and yup, you have to order the chicken wings, the best in town!</p>
+                    </div>
+                  </div>
+
                 </div>
               </div>
             </div>
