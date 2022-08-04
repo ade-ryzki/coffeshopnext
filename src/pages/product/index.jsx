@@ -27,7 +27,7 @@ const Product = () => {
             </div>
           </div>
           {/* card */}
-          <div className="card w-96 bg-[#88B788] shadow-xl my-3 ml-20 w- text-black">
+          <div className="card w-96 bg-[#88B788] shadow-xl my-3 ml-24 w- text-black">
             <div className="card-body">
               <div className="flex">
                 <Image src={ICON1} alt="" />
@@ -38,7 +38,7 @@ const Product = () => {
               </div>
             </div>
           </div>
-          <div className="card w-96 bg-[#F5C361] shadow-xl my-3 ml-20 w- text-black">
+          <div className="card w-96 bg-[#F5C361] shadow-xl my-3 ml-24 w- text-black">
             <div className="card-body">
               <div className="flex">
                 <Image src={ICON2} alt="" />
@@ -49,7 +49,7 @@ const Product = () => {
               </div>
             </div>
           </div>
-          <div className="card w-96 bg-[#88B788] shadow-xl my-3 ml-20 w- text-black">
+          <div className="card w-96 bg-[#88B788] shadow-xl my-3 ml-24 w- text-black">
             <div className="card-body">
               <div className="flex">
                 <Image src={ICON1} alt="" />
@@ -60,7 +60,7 @@ const Product = () => {
               </div>
             </div>
           </div>
-          <div className="card w-96 bg-[#C59378] shadow-xl my-3 ml-20 w- text-black">
+          <div className="card w-96 bg-[#C59378] shadow-xl my-3 ml-24 w- text-black">
             <div className="card-body">
               <div className="flex">
                 <Image src={ICON3} alt="" />
@@ -72,11 +72,11 @@ const Product = () => {
             </div>
           </div>
           {/* btn */}
-          <button className="btn btn- bg-[#6A4029] w-96 ml-20">
+          <button className="btn btn- bg-[#6A4029] w-96 ml-24">
             Apply Coupon
           </button>
           {/* Terms and Condition  */}
-         <div className="ml-20">
+         <div className="ml-24">
          <div className="mx-2 text-black mt-5 mb-96">
             <h1>Terms and Condition </h1>
             <p> 1. You can only apply 1 coupon per day </p>
