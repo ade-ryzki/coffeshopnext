@@ -27,7 +27,7 @@ export const AuthLogin = (formData) => {
 		dispatch(LoginRequest());
 		axios({
 			method: 'POST',
-			url: 'http://localhost:9999/api/v1/auth/login',
+			url: 'localhost:3005/api/v1/auth/login',
 			data: {
 				email: formData.email,
 				password: formData.password,
@@ -67,7 +67,7 @@ export const AuthRegister = (formData) => {
 		dispatch(RegisterRequest());
 		axios({
 			method: 'POST',
-			url: 'http://localhost:9999/api/v1/auth/register',
+			url: 'localhost:3005/api/v1/auth/register',
 			data: {
 				email: formData.email,
 				phoneNumber: formData.phoneNumber,

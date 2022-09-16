@@ -3,29 +3,38 @@ import logo from "../../components/image/coffee 1.svg";
 import google from "../../components/image/google.svg";
 import Image from "next/image";
 import Link from "next/link";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useRouter }from "next/router";
+import { AuthLogin } from '../../redux/actions/Auth';
+import { useDispatch, useSelector } from 'react-redux';
+// import axios from 'axios'
 
 const Login = () => {
   const router = useRouter();
-  const [email, setemail] = useState("");
-  const [password, setpassword] = useState("");
-  const handleSubmit = () => {
-    fetch("http://localhost:3005/api/v1/auth/login", {
-      method: "POST",
-      body: {
-        email: email,
-        password: password,
-      },
-    })
-      .then(() => {
-        router.push("/");
-        console.log("test data login");
-      })
-      .catch((err) => {
-        console.log(err);
-      });
-  };
+	// const dispatch = useDispatch();
+	const [Refetch, setRefetch] = useState();
+	const [LoginData, setLoginData] = useState({
+		email: '',
+		password: '',
+	});
+	// const { loading, data, error, isLogin } = useSelector(
+	// 	(indexreducer) => indexreducer.auth
+	// );
+	const handleSubmit = async (e) => {
+		e.preventDefault();
+		dispatch(AuthLogin(LoginData));
+		setRefetch(!Refetch);
+	};
+
+	// useEffect(() => {
+	// 	if (isLogin == true && data.role == 222) {
+	// 		// router.replace(`/User/homeuser`, `/User/homeuser/${data.id}`);
+	// 		router.replace(`/User/homeuser`);
+	// 		// router.push('/LoginRegister/register');
+	// 	} else if (isLogin == true && data.role == 111) {
+	// 		router.replace(`/User/homeuser`);
+	// 	}
+	// }, [Refetch]);
   return (
     <div>
       <div className="grid grid-col-3 md:grid-flow-col text-black font-[Rubik]">
@@ -60,7 +69,10 @@ const Login = () => {
                   id="exampleFormControlInput2"
                   placeholder="Enter your email address"
                   onChange={(e) => {
-                    setemail(e.target.value);
+                    setLoginData((prevState) => ({
+                      ...prevState,
+                      email: e.target.value,
+                    }));
                   }}
                 />
               </div>
@@ -74,7 +86,10 @@ const Login = () => {
                   id="exampleFormControlInput2"
                   placeholder="Enter your password"
                   onChange={(e) => {
-                    setpassword(e.target.value);
+                    setLoginData((prevState) => ({
+                      ...prevState,
+                      password: e.target.value,
+                    }));
                   }}
                 />
               </div>
@@ -88,7 +103,11 @@ const Login = () => {
             </form>
           </div>
           <div className="flex justify-center mt-10">
-            <button className="btn w-[500px] hover:bg-[#b59047] hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 bg-[#FFBA33] active:shadow-lg transition duration-150 ease-in-out  text-black" onClick={()=>{handleSubmit()}}>
+            <button className="btn w-[500px] hover:bg-[#b59047] hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 bg-[#FFBA33] active:shadow-lg transition duration-150 ease-in-out  text-black" 
+            onClick={(e) => {
+              handleSubmit(e);
+            }}
+            >
               Login
             </button>
           </div>
