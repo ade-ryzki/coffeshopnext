@@ -10,7 +10,7 @@ import DC from "../../components/image/discord.png";
 import SP from "../../components/image/spotify.png";
 import ICON1 from "../../components/image/user.svg";
 import ICON2 from "../../components/image/location.svg";
-import ICON3 from "../../components/image/server.svg";
+import ICON3 from "../../components/image/server.png";
 import AVATAR from "../../components/image/Ellipse 175.png";
 import AVATAR1 from "../../components/image/Ellipse 175 (1).png";
 import AVATAR2 from "../../components/image/Ellipse 175 (2).png";

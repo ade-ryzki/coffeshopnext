@@ -1,5 +1,5 @@
 import styles from "../../../styles/Home.module.css";
-import logo from "../../components/image/coffee 1.svg";
+import PROFIL from "../../components/image/ade.jpeg";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -25,7 +25,7 @@ const Navbarlogin = () => {
           <div className="dropdown dropdown-end">
             <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
               <div className="w-10 rounded-full">
-                <Image src="https://placeImage.com/80/80/people" />
+              <Image src={PROFIL} alt="" />
               </div>
             </label>
             <ul
